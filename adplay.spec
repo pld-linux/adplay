@@ -1,5 +1,5 @@
 Summary:	AdLib music player for the command line
-Summary(pl):	Odtwarzacz muzyki AdLib dzia≥aj±cy z linii poleceÒ
+Summary(pl.UTF-8):   Odtwarzacz muzyki AdLib dzia≈ÇajƒÖcy z linii polece≈Ñ
 Name:		adplay
 Version:	1.5
 Release:	1
@@ -22,13 +22,13 @@ range of AdPlug's file format playback features. Despite this, at the
 moment, only emulated OPL2 output is supported by AdPlay/UNIX, but
 this on a wide range of output devices.
 
-%description -l pl
+%description -l pl.UTF-8
 AdPlay/UNIX to frontend AdPluga dla uniksowej konsoli. AdPlug to
-wolnodostÍpna, uniwersalna biblioteka otwarzania dºwiÍku OPL2.
-AdPlay/UNIX obs≥uguje ca≥y zakres moøliwo∂ci odtwarzania formatÛw
-plikÛw AdPluga. Niezaleønie od tego przez AdPlay/UNIX aktualnie
-obs≥ugiwane jest tylko emulowane wyj∂cie OPL2, ale za to na wielu
-rÛønych urz±dzeniach wyj∂ciowych.
+wolnodostƒôpna, uniwersalna biblioteka otwarzania d≈∫wiƒôku OPL2.
+AdPlay/UNIX obs≈Çuguje ca≈Çy zakres mo≈ºliwo≈õci odtwarzania format√≥w
+plik√≥w AdPluga. Niezale≈ºnie od tego przez AdPlay/UNIX aktualnie
+obs≈Çugiwane jest tylko emulowane wyj≈õcie OPL2, ale za to na wielu
+r√≥≈ºnych urzƒÖdzeniach wyj≈õciowych.
 
 %prep
 %setup -q

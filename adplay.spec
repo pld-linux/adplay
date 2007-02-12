@@ -1,5 +1,5 @@
 Summary:	AdLib music player for the command line
-Summary(pl.UTF-8):   Odtwarzacz muzyki AdLib działający z linii poleceń
+Summary(pl.UTF-8):	Odtwarzacz muzyki AdLib działający z linii poleceń
 Name:		adplay
 Version:	1.5
 Release:	1

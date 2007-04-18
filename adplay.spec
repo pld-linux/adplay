@@ -1,16 +1,17 @@
 Summary:	AdLib music player for the command line
 Summary(pl.UTF-8):	Odtwarzacz muzyki AdLib działający z linii poleceń
 Name:		adplay
-Version:	1.5
+Version:	1.6
 Release:	1
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://dl.sourceforge.net/adplug/%{name}-%{version}.tar.bz2
-# Source0-md5:	18e1ac84b6f07d0388902a083f400da7
+# Source0-md5:	df4792a7ab3761dad7a1f86ae39871ad
 URL:		http://adplug.sourceforge.net/
 BuildRequires:	adplug-devel >= 2.0
 BuildRequires:	alsa-lib-devel >= 0.9.1
-BuildRequires:	esound-devel
+BuildRequires:	esound-devel >= 0.2.8
+BuildRequires:	libao-devel
 BuildRequires:	pkgconfig
 Requires:	adplug >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

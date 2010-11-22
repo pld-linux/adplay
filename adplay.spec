@@ -1,19 +1,23 @@
+#
+# Conditional build:
+%bcond_with	esd	# EsounD output support
+#
 Summary:	AdLib music player for the command line
 Summary(pl.UTF-8):	Odtwarzacz muzyki AdLib działający z linii poleceń
 Name:		adplay
-Version:	1.6
+Version:	1.7
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		Applications/Sound
-Source0:	http://dl.sourceforge.net/adplug/%{name}-%{version}.tar.bz2
-# Source0-md5:	df4792a7ab3761dad7a1f86ae39871ad
+Source0:	http://downloads.sourceforge.net/adplug/%{name}-%{version}.tar.bz2
+# Source0-md5:	651b301b21f08a7519ce8ed3742a0081
 URL:		http://adplug.sourceforge.net/
-BuildRequires:	adplug-devel >= 2.0
+BuildRequires:	adplug-devel >= 2.2
 BuildRequires:	alsa-lib-devel >= 0.9.1
-BuildRequires:	esound-devel >= 0.2.8
+%{?with_esd:BuildRequires:	esound-devel >= 0.2.8}
 BuildRequires:	libao-devel
 BuildRequires:	pkgconfig
-Requires:	adplug >= 2.0
+Requires:	adplug >= 2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -36,6 +40,7 @@ różnych urządzeniach wyjściowych.
 
 %build
 %configure \
+	%{!?with_esd:--disable-output-esound} \
 	--disable-output-sdl \
 	--disable-output-qsa
 %{__make}
